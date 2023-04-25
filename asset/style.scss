@@ -4,8 +4,13 @@ section {
   display: flex;
   justify-content: space-around;
   .postIt {
-    width: 200px;
-    height: 200px;
+    width: 250px;
+    height: 250px;
     background: yellow;
+    #btnPostIt{
+        width: 15px;
+        height: 15px;
+        background: url(../img/add-circle-outline.svg);
+    }
   }
 }
