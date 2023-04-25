@@ -1,15 +1,22 @@
 @import url(/assets/css/normalize.css);
 section {
   display: flex;
-  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
 }
 section .postIt {
   width: 250px;
   height: 250px;
   background: yellow;
+  margin: 20px 20px 20px 20px;
 }
 section .postIt #btnPostIt {
-  width: 15px;
-  height: 15px;
-  background: url(../img/add-circle-outline.svg);
+  width: 35px;
+  height: 35px;
+  background-image: url("/img/pngwing.com.png");
+  border: 0;
+}
+section .postIt #postItInputText {
+  float: right;
+  width: 215px;
 }/*# sourceMappingURL=style.css.map */
