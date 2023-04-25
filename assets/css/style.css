@@ -1,0 +1,10 @@
+@import url(/assets/css/normalize.css);
+section {
+  display: flex;
+  justify-content: space-around;
+}
+section .postIt {
+  width: 200px;
+  height: 200px;
+  background: yellow;
+}/*# sourceMappingURL=style.css.map */
