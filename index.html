@@ -9,21 +9,26 @@
   </head>
   <body>
     <header>
-      <h1>To-Do-List</h1>
+      <h1>THE POST-IT </h1>
+      <h2>The new way to write down your ideas</h2>
     </header>
     <main>       
       <section>
-        <input type="text" id="myInput">
-        <button id="myButton">Add Item</button> 
-        <ul id="myList">
-
-        </ul>
-        <button id="deleteButton">Delete Checked Items</button>
+        <div class="buttonDiv">
+          <input type="text" id="myInput" value="add you idea">
+          <input type="button" id="myButton">
+        </div>
+        <div class="postIt">
+          <ul id="myList"></ul>
+          <button id="deleteButton"></button>
+        </div>
       </section>
+      
+      
     </main>
     <footer>
 
     </footer>
-    <script defer src="/asset/script.js"></script>
+    <script defer src="/asset/script.js" type="module" ></script>
   </body>
 </html>

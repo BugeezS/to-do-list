@@ -1,23 +1,41 @@
 @import url(/assets/css/normalize.css);
-
+header{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 section {
   display: flex;
   flex-direction: column;
   align-items: center;
+  .buttonDiv{
+    display: flex;
+  }
+  #myButton{
+    background-image: url(/img/add-outline.svg);
+    width: 25px;
+    height: 25px;
+    background-color: white;
+    border: 0;
+  }
   .postIt {
-    width: 250px;
-    height: 250px;
-    background: red;
-    margin: 20px 20px 20px 20px;
-    #btnPostIt{
-        width: 35px;
-        height: 35px;
-        background-image: url("/img/pngwing.com.png");
-        border: 0 ;
+    display: flex;
+    background-color: yellow;
+    min-width: 250px;
+    min-height: 250px;
+    margin-top: 20px;
+    #deleteButton{
+      align-self:flex-end;
+      width: 25px;
+      height: 25px;
+      margin-left: 180px;
+      margin-bottom: 5px;
+      background-image: url(/img/trash-outline.svg);
+      border: 0;
+      background-color: yellow;
     }
-    #postItInputText{
-        float: right;
-        width: 215px;
-    }
+  }
+  ul{
+    list-style-type: none;
   }
 }
