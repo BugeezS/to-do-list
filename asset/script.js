@@ -1,16 +1,16 @@
-const createButton = document.querySelector("#createButton");
 const section = document.querySelector("section");
-
-createButton.addEventListener("click", createPostIt);
+const inputText = document.getElementById("inputText")
+const button = document.querySelector("button");
+const array = [];
 
 function createPostIt() {
   const postIt = createPostItDiv();
   section.appendChild(postIt);
-  const btnPostIt = createPostItButton();
-  postIt.appendChild(btnPostIt);
-  btnPostIt.addEventListener("click", createPostItInputText);
-  const listePostIt = createPostItUl(postIt);
-  postIt.appendChild(listePostIt);
+  const liste = addUlPostIt();
+  postIt.appendChild(liste);
+  const elementListe = addLiPostIt();
+  postIt.appendChild(elementListe);
+  
 }
 
 function createPostItDiv() {
@@ -18,33 +18,21 @@ function createPostItDiv() {
   postIt.classList.add("postIt");
   return postIt;
 }
-
-function createPostItButton() {
-  const btnPostIt = document.createElement("input");
-  btnPostIt.setAttribute("type", "button");
-  btnPostIt.setAttribute("id", "btnPostIt");
-  return btnPostIt;
+function addUlPostIt (){
+    const ul = document.createElement("ul");
+    ul.classList.add("liste");
+    return ul;
 }
 
-function createPostItInputText() {
-  const inputText = document.createElement("input");
-  inputText.setAttribute("type", "text");
-  inputText.setAttribute("id", "postItInputText");
-  const postIt = this.parentNode;
-  postIt.appendChild(inputText);
+function addLiPostIt (){
+    const li = document.createElement("li")
+    return li;
+
 }
 
-function createPostItUl(postIt) {
-  const liste = document.createElement("ul");
-  liste.classList.add("liste");
-  return liste;
-}
-
-
-
-
-  
-
-
-
-
+function addToArr() {
+    const inputVal = document.getElementById("input-text").value;
+    array.push(inputVal);
+    console.log(array); 
+  }
+button.addEventListener("click",createPostIt);
