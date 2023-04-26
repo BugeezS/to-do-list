@@ -7,7 +7,7 @@ section {
 section .postIt {
   width: 250px;
   height: 250px;
-  background: yellow;
+  background: red;
   margin: 20px 20px 20px 20px;
 }
 section .postIt #btnPostIt {

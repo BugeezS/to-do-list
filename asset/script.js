@@ -1,38 +1,15 @@
-const section = document.querySelector("section");
-const inputText = document.getElementById("inputText")
-const button = document.querySelector("button");
-const array = [];
+const myList = document.querySelector('#myList');
+const myInput = document.querySelector('#myInput');
+const myButton = document.querySelector('#myButton');
+const deleteButton = document.querySelector('#deleteButton');
 
-function createPostIt() {
-  const postIt = createPostItDiv();
-  section.appendChild(postIt);
-  const liste = addUlPostIt();
-  postIt.appendChild(liste);
-  const elementListe = addLiPostIt();
-  postIt.appendChild(elementListe);
-  
+function deleteCheckedItems() {
+  const checkedItems = myList.querySelectorAll('input[type="checkbox"]:checked');
+  checkedItems.forEach(item => {
+    const listItem = item.parentNode;
+    myList.removeChild(listItem);
+  });
 }
 
-function createPostItDiv() {
-  const postIt = document.createElement("div");
-  postIt.classList.add("postIt");
-  return postIt;
-}
-function addUlPostIt (){
-    const ul = document.createElement("ul");
-    ul.classList.add("liste");
-    return ul;
-}
-
-function addLiPostIt (){
-    const li = document.createElement("li")
-    return li;
-
-}
-
-function addToArr() {
-    const inputVal = document.getElementById("input-text").value;
-    array.push(inputVal);
-    console.log(array); 
-  }
-button.addEventListener("click",createPostIt);
+myButton.addEventListener('click', addItem);
+deleteButton.addEventListener('click', deleteCheckedItems);
