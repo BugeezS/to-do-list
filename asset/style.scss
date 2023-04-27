@@ -12,7 +12,7 @@ section {
     display: flex;
   }
   #myButton {
-    background-image: url(./img/add-outline.svg);
+    background-image: url(../img/add-outline.svg);
     width: 25px;
     height: 25px;
     background-color: white;
@@ -31,7 +31,7 @@ section {
       height: 25px;
       margin-left: 180px;
       margin-bottom: 5px;
-      background-image: url(./img/trash-outline.svg);
+      background-image: url(../img/trash-outline.svg);
       border: 0;
       background-color: yellow;
     }
