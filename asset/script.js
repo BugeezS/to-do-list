@@ -1,4 +1,4 @@
-import { addItem } from "./addItem.1.js";
+import { addItem } from "./addItem.js";
 import { deleteCheckedItems } from "./deleteCheckedItems.js";
 
 export const myList = document.querySelector('#myList');
