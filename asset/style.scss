@@ -11,8 +11,8 @@ section {
   .input_div {
     display: flex;
   }
-  #myButton {
-    background-image: url(../img/add-outline.svg);
+  #input_div__add_button {
+    background-image: url(../img/add-circle-outline.svg);
     width: 25px;
     height: 25px;
     background-color: white;
@@ -28,7 +28,7 @@ section {
     &__mylist {
       list-style-type: none;
     }
-    #deleteButton {
+    #post_it_div__delete_button {
       align-self: flex-end;
       width: 25px;
       height: 25px;
