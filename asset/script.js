@@ -1,7 +1,7 @@
 import { addItem } from "./addItem.js";
 import { deleteCheckedItems } from "./deleteCheckedItems.js";
 
-export const myList = document.querySelector("#myList");
+export const myList = document.querySelector(".post_it_div__my_list");
 export const myInput = document.querySelector("#myInput");
 const myButton = document.querySelector("#myButton");
 const deleteButton = document.querySelector("#deleteButton");
