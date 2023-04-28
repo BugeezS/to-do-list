@@ -40,4 +40,18 @@ section .post_it_div #post_it_div__delete_button {
   background-image: url(../img/trash-outline.svg);
   border: 0;
   background-color: yellow;
+}
+section .checkbox {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  /* Set the width and height of the checkbox */
+  width: 20px;
+  height: 20px;
+  /* Set the background color of the checkbox to red */
+  background-color: green;
+  /* Set the border radius of the checkbox to create a circular shape */
+  border-radius: 50%;
+  /* Add a border around the checkbox */
+  border: 1px solid black;
 }/*# sourceMappingURL=style.css.map */

@@ -7,8 +7,6 @@ const myButton = document.querySelector("#input_div__add_button");
 const deleteButton = document.querySelector("#post_it_div__delete_button");
 export let listItems = [];
 
-addItem();
-deleteCheckedItems();
 myButton.addEventListener("click", addItem);
 deleteButton.addEventListener("click", deleteCheckedItems);
 
@@ -19,6 +17,7 @@ if (localStorage.getItem("myListItems")) {
     const checkbox = document.createElement("input");
     checkbox.type = "checkbox";
     checkbox.checked = false;
+    checkbox.classList.add("checkbox");
     listItem.appendChild(checkbox);
     const label = document.createElement("label");
     label.textContent = item;
@@ -41,4 +40,3 @@ if (localStorage.getItem("myListItems")) {
     });
   });
 }
-console.log(listItems);
